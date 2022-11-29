@@ -71,6 +71,10 @@ namespace FiapSmartCityMVC.Controllers
                 Debug.Print("Comercializado: " + productType.TypeDescription);
                 Debug.Print("Gravando o Tipo de Produto");
 
+                // Gravação efetuada com sucesso.
+                // Gravando mensagem de sucesso na TempData
+                @TempData["message"] = "Tipo cadastrado com sucesso!";
+
                 return RedirectToAction("Index", "ProductType");
 
                 // Encontrou um erro no preenchimento do campo descriçao

@@ -9,6 +9,16 @@
     <!-- uso de TagHelpers para definir o Controller e a Action -->
     <a asp-controller="ProductType" asp-action="Create">Novo Tipo</a>
 </p>
+
+<!-- Verifica se a chave "Mensagem" existe no TempData -->
+@if (@TempData["Message"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        <!-- Imprime para o usuário a mensagem -->
+        @TempData["Message"]
+    </div>
+}
+
 <table class="table" border="1">
     <tr>
         <th>Id</th>
