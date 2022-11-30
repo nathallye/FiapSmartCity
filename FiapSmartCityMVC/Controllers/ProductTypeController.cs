@@ -77,7 +77,8 @@ namespace FiapSmartCityMVC.Controllers
             {
                 productTypeRepository.Update(productType);
 
-                TempData["message"] = "Tipo alterado com sucesso!";
+                @TempData["message"] = "Tipo alterado com sucesso!";
+
                 return RedirectToAction("Index", "ProductType");
             }
             else
@@ -103,11 +104,11 @@ namespace FiapSmartCityMVC.Controllers
         {
             productTypeRepository.Delete(Id);
 
-            TempData["message"] = "Tipo removido com sucesso!";
+            @TempData["message"] = "Tipo removido com sucesso!";
 
             // Substituímos o return View()
             // pelo método de redirecionamento
-            return RedirectToAction("Index", "TypeProduct");
+            return RedirectToAction("Index", "ProductType");
         }
     }
 }
