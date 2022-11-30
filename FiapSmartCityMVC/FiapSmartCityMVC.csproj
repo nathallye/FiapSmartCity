@@ -7,7 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Scripts\**" />
+    <Content Remove="Scripts\**" />
+    <EmbeddedResource Remove="Scripts\**" />
+    <None Remove="Scripts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Views\ProductType\Register.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
 </Project>
