@@ -7,7 +7,7 @@
 <h1>Tipo de Produto</h1>
 <p>
     <!-- uso de TagHelpers para definir o Controller e a Action -->
-    <a class="btn btn-secondary"
+    <a class="btn btn-sm btn-secondary"
        asp-controller="ProductType" asp-action="Create">Novo Tipo</a>
 </p>
 
@@ -38,17 +38,17 @@
             </td>
             <td>
                 <!-- asp-route-id é usado para informar o Id do Item selecionado. -->
-                <a class="btn btn-outline-secondary"
+                <a class="btn btn-sm btn-outline-secondary"
                     asp-controller="ProductType"
                     asp-action="Update"
                     asp-route-id="@item.TypeId">Editar</a>
 
-                <a class="btn btn-outline-success"
+                <a class="btn btn-sm btn-outline-success"
                     asp-controller="ProductType"
                     asp-action="Read"
                     asp-route-id="@item.TypeId">Consultar</a>
 
-                <a class="btn btn-outline-danger"
+                <a class="btn btn-sm btn-outline-danger"
                     asp-controller="ProductType"
                     asp-action="Delete"
                     asp-route-id="@item.TypeId">Excluir</a>

@@ -21,7 +21,7 @@
         <div class="form-horizontal">
             <hr />
 
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <label>Descrição</label>
                 <div class="col-md-10">
                     <!-- Caixa de Texto -->
@@ -29,9 +29,9 @@
                 </div>
             </div>
 
-            <div class="form-group">
-                <label>Comercializado</label>
-                <div class="checkbox">
+            <div class="form-group">   
+                <div class="checkbox mb-2">
+                    <label>Comercializado</label>
                     <!-- CheckBox -->
                     <input asp-for="Marketed" />
                 </div>
@@ -39,9 +39,11 @@
 
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="reset" value="Limpar" class="btn btn-default" />
+                    <input class="btn btn-sm btn-outline-danger "
+                           type="reset" value="Limpar" />
                     <!-- HTML Simple para envio dos dados do formulário -->
-                    <input type="submit" value="Gravar ALteração" class="btn btn-default" />
+                    <input class="btn btn-sm btn-outline-success" 
+                        type="submit" value="Gravar Alteração" />
                 </div>
             </div>
             <hr />
@@ -49,9 +51,11 @@
     </form>
 
     <div>
-        <a asp-controller="ProductType" asp-action="Index">Voltar</a>
+        <a class="btn btn-sm btn-outline-secondary"
+            asp-controller="ProductType" asp-action="Index">Voltar</a>
     </div>
 
+    <br />
 </body>
 </html>
 
