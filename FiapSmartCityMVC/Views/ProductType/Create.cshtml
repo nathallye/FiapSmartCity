@@ -31,9 +31,11 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="reset" value="Limpar" class="btn btn-default" />
+                <input class="btn btn-sm btn-outline-danger"
+                    type="reset" value="Limpar" class="btn btn-default" />
                 <!-- HTML Simple para envio dos dados do formulário -->
-                <input type="submit" value="Cadastrar" class="btn btn-default" />
+                <input class="btn btn-sm btn-outline-success"
+                    type="submit" value="Cadastrar" class="btn btn-default" />
             </div>
         </div>
         <hr />
@@ -41,6 +43,9 @@
 </form>
 
 <div>
-    <a asp-controller="ProductType" asp-action="Index">Voltar</a>
+    <a class="btn btn-sm btn-outline-secondary"
+        asp-controller="ProductType" asp-action="Index">Voltar</a>
 </div>
+
+<br />
 
