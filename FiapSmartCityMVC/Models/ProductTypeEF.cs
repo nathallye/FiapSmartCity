@@ -4,13 +4,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FiapSmartCityMVC.Models
 {
+    // Quando não estamos trabalhando com o oracle e sim diretamente com SQL Server, não se faz necessário usar as anotações [TABLE], [KEY] e [COLUMN]
+    // Porque a EF por convenção, associa tabelas e campos pelo nome da classe e atributos
     [Table("PRODUCTTYPEEF")]
     public class ProductTypeEF
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
-        [Column("TYPEID")]
         public int TypeId { get; set; }
 
         [Column("TYPEDESCRIPTION")]

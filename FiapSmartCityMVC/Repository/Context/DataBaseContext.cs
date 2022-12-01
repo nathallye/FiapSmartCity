@@ -1,13 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
 using FiapSmartCityMVC.Models;
-using FiapSmartCityMVC.Repository.Context;
 
 namespace FiapSmartCityMVC.Repository.Context
 {
+    // Context faz relação com o banco de dados e o DbSet faz relação com as tabelas
     public class DataBaseContext : DbContext
     {
-
         public DbSet<ProductTypeEF> ProductTypeEF { get; set; }
         public DbSet<ProductEF> ProductEF { get; set; }
 

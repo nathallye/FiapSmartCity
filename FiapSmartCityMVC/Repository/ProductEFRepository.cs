@@ -5,14 +5,14 @@ using FiapSmartCityMVC.Repository.Context;
 
 namespace FiapSmartCityMVC.Repository
 {
-    public class ProductRepositoryEF
+    public class ProductEFRepository
     {
 
         private readonly DataBaseContext context;
 
-        public ProductRepositoryEF()
+        public ProductEFRepository()
         {
-            // Criando um instância da classe de contexto do EntityFramework
+            // Criando um instância da classe de contexto do EntityFramework (relacionando ao BD)
             context = new DataBaseContext();
         }
 

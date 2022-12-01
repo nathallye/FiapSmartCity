@@ -4,7 +4,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FiapSmartCityMVC.Models
 {
-    [Table("PRODUCTEF")]
+    // Quando não estamos trabalhando com o oracle e sim diretamente com SQL Server, não se faz necessário usar as anotações [TABLE], [KEY] e [COLUMN]
+    // Porque a EF por convenção, associa tabelas e campos pelo nome da classe e atributos
+    [Table("PRODUCTEF")] 
     public class ProductEF
     {
         [Key]
@@ -32,6 +34,6 @@ namespace FiapSmartCityMVC.Models
         public int TypeId { get; set; }
 
         // Navigation Property
-        public ProductType Tipo { get; set; }
+        public ProductTypeEF Type { get; set; }
     }
 }
